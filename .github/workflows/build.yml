@@ -11,7 +11,7 @@ permissions:
 jobs:
   build:
     name: Create Release
-    runs-on: self-hosted
+    runs-on: github-agent
     env:
       targetZip: qemu-w64-portable-${{ github.ref_name }}.zip
     steps:
